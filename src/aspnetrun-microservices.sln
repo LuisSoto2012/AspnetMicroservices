@@ -1,8 +1,34 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{18E64ED0-1559-47CE-B851-8E0971E85DBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{F15EAE38-A4D2-4DE4-ADC8-4340B7B63962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{4508FE09-78B1-4B69-991C-C225FF9207E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{1909A4C5-5ED2-4A16-9BA0-50DB92770379}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket.API", "Services\Basket.API\Basket.API.csproj", "{56C220D5-D819-4C41-AF52-AB2F537EB0DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F15EAE38-A4D2-4DE4-ADC8-4340B7B63962} = {18E64ED0-1559-47CE-B851-8E0971E85DBC}
+		{4508FE09-78B1-4B69-991C-C225FF9207E0} = {F15EAE38-A4D2-4DE4-ADC8-4340B7B63962}
+		{1909A4C5-5ED2-4A16-9BA0-50DB92770379} = {18E64ED0-1559-47CE-B851-8E0971E85DBC}
+		{56C220D5-D819-4C41-AF52-AB2F537EB0DB} = {1909A4C5-5ED2-4A16-9BA0-50DB92770379}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4508FE09-78B1-4B69-991C-C225FF9207E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4508FE09-78B1-4B69-991C-C225FF9207E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4508FE09-78B1-4B69-991C-C225FF9207E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4508FE09-78B1-4B69-991C-C225FF9207E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56C220D5-D819-4C41-AF52-AB2F537EB0DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C220D5-D819-4C41-AF52-AB2F537EB0DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C220D5-D819-4C41-AF52-AB2F537EB0DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C220D5-D819-4C41-AF52-AB2F537EB0DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
