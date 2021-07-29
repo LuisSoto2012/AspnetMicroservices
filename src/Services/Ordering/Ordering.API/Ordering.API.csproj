@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <UserSecretsId>aspnet-Ordering.API-7E59A68A-B032-4561-98BF-C0DE539B77EE</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.7" />
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.7" />
+        <PackageReference Include="Microsoft.Identity.Web" Version="1.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Ordering.Application\Ordering.Application.csproj" />
+      <ProjectReference Include="..\Ordering.Infrastructure\Ordering.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
